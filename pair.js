@@ -73,7 +73,7 @@ router.get('/', async (req, res) => {
                         // Send session file to user
                         const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
                         await DEX-AJ-BOT.sendMessage(userJid, {
-                            document: sessionKnight,
+                            document: sessionDEXAJ,
                             mimetype: 'application/json',
                             fileName: 'creds.json'
                         });
@@ -82,7 +82,7 @@ router.get('/', async (req, res) => {
                         // Send video thumbnail with caption
                         await DEX-AJ-BOT.sendMessage(userJid, {
                             image: { url: 'https://img.youtube.com/vi/-oz_u1iMgf8/maxresdefault.jpg' },
-                            caption: `🎬 *KnightBot MD V2.0 Full Setup Guide!*\n\n🚀 Bug Fixes + New Commands + Fast AI Chat\n📺 Watch Now: https://youtu.be/NjOipI2AoMk`
+                            caption: `🎬 *DEX-AJ-BOT V2.0 Full Setup Guide!*\n\n🚀 Bug Fixes + New Commands + Fast AI Chat\n📺 Watch Now: https://youtube.com/@DEX-BOT-AJOY`
                         });
                         console.log("🎬 Video guide sent successfully");
 
