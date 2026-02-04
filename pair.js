@@ -68,12 +68,12 @@ router.get('/', async (req, res) => {
                     console.log("📱 Sending session file to user...");
                     
                     try {
-                        const sessionDEXAJ = fs.readFileSync(dirs + '/creds.json');
+                        const sessiondexaj = fs.readFileSync(dirs + '/creds.json');
 
                         // Send session file to user
                         const userJid = jidNormalizedUser(num + '@s.whatsapp.net');
                         await DEX-AJ-BOT.sendMessage(userJid, {
-                            document: sessionDEXAJ,
+                            document: sessiondexaj,
                             mimetype: 'application/json',
                             fileName: 'creds.json'
                         });
@@ -91,7 +91,7 @@ router.get('/', async (req, res) => {
                             text: `⚠️Do not share this file with anybody⚠️\n 
 ┌┤✑  Thanks for using DEX-AJ-BOT
 │└────────────┈ ⳹        
-│©2025 Mr Unique Hacker 
+│©2026 Mr Ajoy Hacker 
 └─────────────────┈ ⳹\n\n`
                         });
                         console.log("⚠️ Warning message sent successfully");
